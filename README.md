@@ -20,7 +20,6 @@ A web-based forum where students can post academic doubts, upload images, answer
 
 ## Demo
 
-Video demo: 
 https://github.com/user-attachments/assets/6ab0c48f-c751-4356-afe6-a3735be6825d
 
 ## Getting Started

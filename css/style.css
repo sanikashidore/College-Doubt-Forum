@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    background-color: #f8f9fa;
+}
+/* Apply background only to index page */
+body.index-page {
+    background: url('../assets/forum-bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Ensure full height */
+.container-fluid.bg-cover {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Style the welcome box */
+.welcome-box {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* slightly translucent white */
+}
+
+/* Optional: make buttons responsive on smaller screens */
+@media (max-width: 576px) {
+    .welcome-box .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Question card styles */
+.question-card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.question-title {
+    font-weight: 600;
+    color: #212529;
+}
+
+.question-content {
+    white-space: pre-line;
+}
+
+/* Vote button styles */
+.votes-container {
+    min-width: 40px;
+}
+
+.vote-up, .vote-down {
+    padding: 0;
+    color: #6c757d;
+}
+
+.vote-up:hover {
+    color: #198754;
+}
+
+.vote-down:hover {
+    color: #dc3545;
+}
+
+.vote-up.text-success {
+    color: #198754 !important;
+}
+
+.vote-down.text-danger {
+    color: #dc3545 !important;
+}
+
+/* Answer styles */
+.answers-container {
+    margin-top: 1rem;
+}
+
+.answer-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+/* Tag styles */
+.question-tags .badge {
+    background-color: #6c757d;
+    margin-right: 0.25rem;
+}
+
+/* Filter button styles */
+.question-filters .btn-group {
+    margin-bottom: 1rem;
+}
+
+/* Image preview */
+.image-preview img {
+    border: 1px solid #dee2e6;
+}
+
+/* Login/Signup form */
+.card-header-tabs {
+    margin-right: 0;
+    margin-bottom: -0.75rem;
+    margin-left: 0;
+    border-bottom: 0;
+}
+
+/* Subject cards on home page */
+.card .bi {
+    color: #0d6efd;
+}

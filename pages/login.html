@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🙋‍♀️ Login - College Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="auth-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="auth-tabs-content">
+                            <!-- Login Form -->
+                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                                <form id="login-form">
+                                    <div class="mb-3">
+                                        <label for="login-email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="login-email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="login-password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="login-password" required>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                    </div>
+                                    <div class="alert alert-danger mt-3" id="login-error" style="display: none;"></div>
+                                </form>
+                            </div>
+                            
+                            <!-- Sign Up Form -->
+                            <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                                <form id="signup-form">
+                                    <div class="mb-3">
+                                        <label for="signup-email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="signup-email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signup-password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="signup-password" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signup-confirm-password" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="signup-confirm-password" required>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-success">Sign Up</button>
+                                    </div>
+                                    <div class="alert alert-danger mt-3" id="signup-error" style="display: none;"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="../index.html" class="btn btn-outline-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Your Firebase Configuration - Replace with your actual config -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "",
+            authDomain: "",
+            projectId: "",
+            storageBucket: "",
+            messagingSenderId: "",
+            appId: ""
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    
+    <script src="../js/auth.js"></script>
+</body>
+</html>

@@ -1,6 +1,8 @@
-# College-Doubt-Forum
+# 🙋‍♀️College-Doubt-Forum
 
-A web-based forum where students can post academic doubts, upload images, answer others' questions, and filter posts by subject — built to foster peer-to-peer learning.
+A live, web-based forum where students can post academic doubts, upload images, answer others' questions, and filter posts by subject — built to foster peer-to-peer learning.
+
+## [Live Link 🔗](https://college-forum-672c4.web.app/index.html)
 
 ## Features
 
@@ -9,14 +11,15 @@ A web-based forum where students can post academic doubts, upload images, answer
 - Answer others' questions and upvote helpful responses  
 - Filter and search by subject  
 - Firebase Authentication for secure logins  
-- Firestore & Firebase Storage for efficient data handling  
+- Firestore for efficient data handling and ImgBB for external image hosting
 
 ## Tech Stack
 
 - Frontend: HTML, CSS, JavaScript  
 - Backend: Firebase  
 - Database: Firestore  
-- Storage: Firebase Storage  
+- Image Storage: ImgBB
+- Deployment: Firebase Hosting
 
 ## Demo
 
